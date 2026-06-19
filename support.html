@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GraphWeave — サポート / Support</title>
+<style>
+  :root{
+    --bg:#0B0C18; --panel:#14162C; --line:#23264A;
+    --ink:#EDEFF7; --muted:#9AA0C4;
+    --cw-blue:#3B4CC0; --cw-white:#DDDDDD; --cw-red:#B40426;
+    --link:#8AA0F0;
+    --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+    --sans:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",Meiryo,"Segoe UI",sans-serif;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{
+    background:
+      radial-gradient(1200px 700px at 50% -10%, #1B1D3A 0%, rgba(27,29,58,0) 60%),
+      var(--bg);
+    color:var(--ink); font-family:var(--sans);
+    line-height:1.7; -webkit-font-smoothing:antialiased;
+    padding:0 22px 90px;
+  }
+  .wrap{max-width:720px;margin:0 auto}
+  /* header */
+  header{display:flex;align-items:center;gap:14px;padding:40px 0 8px}
+  .mark{width:46px;height:46px;flex:none}
+  .brand{font-weight:800;letter-spacing:-.01em;font-size:22px}
+  .toggle{margin-left:auto;display:flex;gap:2px;border:1px solid var(--line);
+    border-radius:999px;padding:3px;background:var(--panel)}
+  .toggle button{font-family:var(--mono);font-size:12px;letter-spacing:.04em;
+    color:var(--muted);background:none;border:0;padding:6px 12px;border-radius:999px;cursor:pointer}
+  .toggle button[aria-pressed="true"]{background:#262a52;color:var(--ink)}
+  .toggle button:focus-visible{outline:2px solid var(--link);outline-offset:2px}
+  /* coolwarm rule = signature divider */
+  .rule{height:3px;border-radius:2px;margin:22px 0 6px;
+    background:linear-gradient(90deg,var(--cw-blue),var(--cw-white),var(--cw-red))}
+  .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.22em;
+    text-transform:uppercase;color:var(--muted);margin:34px 0 6px}
+  h1{font-size:30px;line-height:1.25;letter-spacing:-.015em;margin:.1em 0 .3em}
+  h2{font-size:19px;letter-spacing:-.01em;margin:30px 0 6px}
+  p{color:#D6D9EC;margin:.4em 0}
+  .lead{color:var(--muted);font-size:16px}
+  a{color:var(--link);text-decoration:none;border-bottom:1px solid rgba(138,160,240,.35)}
+  a:hover{border-bottom-color:var(--link)}
+  a:focus-visible{outline:2px solid var(--link);outline-offset:3px;border-radius:3px}
+  .faq{border:1px solid var(--line);border-radius:14px;background:var(--panel);
+    padding:6px 18px;margin-top:14px}
+  .faq details{border-bottom:1px solid var(--line)}
+  .faq details:last-child{border-bottom:0}
+  .faq summary{cursor:pointer;list-style:none;padding:16px 0;font-weight:650;
+    display:flex;align-items:center;gap:10px}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::before{content:"";width:8px;height:8px;border-radius:50%;flex:none;
+    background:linear-gradient(135deg,var(--cw-blue),var(--cw-red))}
+  .faq summary:focus-visible{outline:2px solid var(--link);outline-offset:3px;border-radius:6px}
+  .faq .a{padding:0 0 16px 18px;color:#C9CDE6}
+  .pill{display:inline-block;font-family:var(--mono);font-size:12px;color:var(--muted);
+    border:1px solid var(--line);border-radius:999px;padding:3px 10px;margin:3px 4px 3px 0}
+  .contact{margin-top:14px;border:1px solid var(--line);border-radius:14px;
+    background:var(--panel);padding:18px 20px}
+  .contact a.mail{font-size:18px;font-weight:700}
+  footer{color:var(--muted);font-size:13px;margin-top:46px;
+    display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center}
+  footer .rule{flex-basis:100%;margin:0 0 14px}
+  /* language visibility */
+  body.lang-ja .en{display:none}
+  body.lang-en .ja{display:none}
+  .mark-enter{opacity:0;transform:translateY(4px);animation:rise .5s ease forwards}
+  @keyframes rise{to{opacity:1;transform:none}}
+  @media (prefers-reduced-motion:reduce){.mark-enter{animation:none;opacity:1;transform:none}}
+  @media (max-width:520px){h1{font-size:25px}.brand{font-size:20px}}
+</style>
+</head>
+<body class="lang-ja">
+<div class="wrap">
+
+  <header>
+    <svg class="mark mark-enter" viewBox="0 0 100 100" role="img" aria-label="GraphWeave">
+      <rect x="2" y="2" width="96" height="96" rx="23" fill="#1A1C38"/>
+      <g stroke-linecap="round" stroke-width="5" fill="none">
+        <line x1="50" y1="26" x2="26" y2="48" stroke="#3B4CC0"/>
+        <line x1="50" y1="26" x2="74" y2="48" stroke="#B40426"/>
+        <line x1="26" y1="48" x2="74" y2="48" stroke="#DDDDDD"/>
+        <line x1="26" y1="48" x2="38" y2="76" stroke="#9CA3D1"/>
+        <line x1="74" y1="48" x2="62" y2="76" stroke="#CD8694"/>
+        <line x1="38" y1="76" x2="62" y2="76" stroke="#B40426"/>
+      </g>
+      <g fill="#F4F6FF" stroke="#0E1022" stroke-width="2">
+        <circle cx="50" cy="26" r="8"/><circle cx="26" cy="48" r="8"/>
+        <circle cx="74" cy="48" r="8"/><circle cx="38" cy="76" r="8"/>
+        <circle cx="62" cy="76" r="8"/>
+      </g>
+    </svg>
+    <span class="brand">GraphWeave</span>
+    <div class="toggle" role="group" aria-label="Language">
+      <button id="btn-ja" aria-pressed="true" onclick="setLang('ja')">日本語</button>
+      <button id="btn-en" aria-pressed="false" onclick="setLang('en')">EN</button>
+    </div>
+  </header>
+
+  <div class="rule"></div>
+
+  <!-- ===== JA ===== -->
+  <div class="ja">
+    <p class="eyebrow">サポート</p>
+    <h1>GraphWeave サポート</h1>
+    <p class="lead">グラフを描いて、離散曲率や中心性をその場で測るアプリです。使い方とよくある質問をまとめました。</p>
+
+    <h2>使い方の基本</h2>
+    <p>画面上部の3つのモードで操作します。</p>
+    <p>
+      <span class="pill">ノード</span> 空いた場所をタップして頂点を追加
+      <span class="pill">リンク</span> 2つの頂点を順にタップして辺を作成
+      <span class="pill">移動</span> 頂点をドラッグして配置を調整
+    </p>
+    <p>「指標」メニューで見たい量を選び、<b>計算する</b>をタップすると、色と数値で結果が表示されます。</p>
+
+    <h2>よくある質問</h2>
+    <div class="faq">
+      <details><summary>計算できる指標は？</summary>
+        <div class="a">離散リッチ曲率（Ollivier–Ricci）に加え、次数・近接・媒介・固有ベクトル中心性、クラスタ係数、PageRank に対応しています。曲率はリンクごと、中心性はノードごとに色分けされます。</div></details>
+      <details><summary>色は何を表していますか？</summary>
+        <div class="a">青から赤への発散配色です。青が小さい値、赤が大きい値を表し、画面下部のカラーバーがその範囲を示します。曲率の場合は青が負、赤が正にあたります。</div></details>
+      <details><summary>グラフの保存と読み込みは？</summary>
+        <div class="a">右上の保存アイコンで名前を付けて端末内に保存できます。左上のフォルダから一覧を開いて読み込み、左スワイプで削除できます。</div></details>
+      <details><summary>通信やアカウントは必要ですか？</summary>
+        <div class="a">不要です。完全オフラインで動作し、アカウント登録もいりません。</div></details>
+      <details><summary>データは収集されますか？</summary>
+        <div class="a">いいえ。データは一切収集しません。作成したグラフは端末内にのみ保存され、外部に送信されることはありません。詳しくは <a href="privacy.html">プライバシーポリシー</a> をご覧ください。</div></details>
+    </div>
+
+    <h2>お問い合わせ</h2>
+    <div class="contact">
+      <p style="margin:0 0 6px">ご質問・ご要望・不具合のご報告は、こちらまでお気軽にどうぞ。</p>
+      <!-- ↓↓↓ ここをご自身の連絡先メールに変更してください ↓↓↓ -->
+      <a class="mail" href="mailto:your-email@example.com">your-email@example.com</a>
+    </div>
+  </div>
+
+  <!-- ===== EN ===== -->
+  <div class="en">
+    <p class="eyebrow">Support</p>
+    <h1>GraphWeave Support</h1>
+    <p class="lead">Draw a network and measure its discrete curvature and centrality on the spot. Here is how to use the app, with answers to common questions.</p>
+
+    <h2>Getting started</h2>
+    <p>Work with the three modes at the top of the screen.</p>
+    <p>
+      <span class="pill">Node</span> tap empty space to add a vertex
+      <span class="pill">Link</span> tap two vertices in turn to connect them
+      <span class="pill">Move</span> drag a vertex to reposition it
+    </p>
+    <p>Pick a quantity from the <b>Metric</b> menu and tap <b>Calculate</b> — the result appears as color and numbers.</p>
+
+    <h2>Frequently asked questions</h2>
+    <div class="faq">
+      <details><summary>Which metrics can it compute?</summary>
+        <div class="a">Discrete Ollivier–Ricci curvature, plus degree, closeness, betweenness and eigenvector centrality, the clustering coefficient, and PageRank. Curvature is colored per link; centralities are colored per node.</div></details>
+      <details><summary>What do the colors mean?</summary>
+        <div class="a">A blue-to-red diverging scale. Blue is a low value and red is a high value; the bar at the bottom shows the range. For curvature, blue is negative and red is positive.</div></details>
+      <details><summary>How do I save and load graphs?</summary>
+        <div class="a">Use the save icon at the top right to name and store a graph on your device. Open the folder at the top left to load one, and swipe left to delete.</div></details>
+      <details><summary>Do I need a network connection or account?</summary>
+        <div class="a">No. The app runs fully offline and requires no account.</div></details>
+      <details><summary>Do you collect any data?</summary>
+        <div class="a">No. GraphWeave collects no data. Your graphs are stored only on your device and are never sent anywhere. See the <a href="privacy.html">Privacy Policy</a> for details.</div></details>
+    </div>
+
+    <h2>Contact</h2>
+    <div class="contact">
+      <p style="margin:0 0 6px">Questions, requests, or bug reports are always welcome.</p>
+      <!-- ↓↓↓ Replace with your own contact email ↓↓↓ -->
+      <a class="mail" href="mailto:taiki_yamada@riko.shimane-u.ac.jp">taiki_yamada@riko.shimane-u.ac.jp</a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="rule"></div>
+    <span>© 2026 GraphWeave</span>
+    <span class="ja">最終更新: 2026年6月</span>
+    <span class="en">Last updated: June 2026</span>
+    <a href="privacy.html"><span class="ja">プライバシーポリシー</span><span class="en">Privacy Policy</span></a>
+  </footer>
+
+</div>
+<script>
+  function setLang(l){
+    document.body.classList.toggle('lang-ja', l==='ja');
+    document.body.classList.toggle('lang-en', l==='en');
+    document.documentElement.lang = l;
+    document.getElementById('btn-ja').setAttribute('aria-pressed', l==='ja');
+    document.getElementById('btn-en').setAttribute('aria-pressed', l==='en');
+  }
+  // honor browser preference on first load
+  if((navigator.language||'').toLowerCase().startsWith('en')) setLang('en');
+</script>
+</body>
+</html>
