@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GraphWeave — プライバシーポリシー / Privacy Policy</title>
+<style>
+  :root{
+    --bg:#0B0C18; --panel:#14162C; --line:#23264A;
+    --ink:#EDEFF7; --muted:#9AA0C4;
+    --cw-blue:#3B4CC0; --cw-white:#DDDDDD; --cw-red:#B40426;
+    --link:#8AA0F0;
+    --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+    --sans:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",Meiryo,"Segoe UI",sans-serif;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{
+    background:
+      radial-gradient(1200px 700px at 50% -10%, #1B1D3A 0%, rgba(27,29,58,0) 60%),
+      var(--bg);
+    color:var(--ink); font-family:var(--sans);
+    line-height:1.75; -webkit-font-smoothing:antialiased; padding:0 22px 90px;
+  }
+  .wrap{max-width:720px;margin:0 auto}
+  header{display:flex;align-items:center;gap:14px;padding:40px 0 8px}
+  .mark{width:46px;height:46px;flex:none}
+  .brand{font-weight:800;letter-spacing:-.01em;font-size:22px}
+  .toggle{margin-left:auto;display:flex;gap:2px;border:1px solid var(--line);
+    border-radius:999px;padding:3px;background:var(--panel)}
+  .toggle button{font-family:var(--mono);font-size:12px;letter-spacing:.04em;
+    color:var(--muted);background:none;border:0;padding:6px 12px;border-radius:999px;cursor:pointer}
+  .toggle button[aria-pressed="true"]{background:#262a52;color:var(--ink)}
+  .toggle button:focus-visible{outline:2px solid var(--link);outline-offset:2px}
+  .rule{height:3px;border-radius:2px;margin:22px 0 6px;
+    background:linear-gradient(90deg,var(--cw-blue),var(--cw-white),var(--cw-red))}
+  .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.22em;
+    text-transform:uppercase;color:var(--muted);margin:34px 0 6px}
+  h1{font-size:30px;line-height:1.25;letter-spacing:-.015em;margin:.1em 0 .3em}
+  h2{font-size:18px;letter-spacing:-.01em;margin:30px 0 6px}
+  p{color:#D6D9EC;margin:.5em 0}
+  .lead{color:var(--muted);font-size:16px}
+  .key{border:1px solid var(--line);border-radius:14px;background:var(--panel);
+    padding:14px 20px;margin:18px 0}
+  .key b{color:var(--ink)}
+  ul{margin:.4em 0 .4em 0;padding-left:1.1em}
+  li{margin:.35em 0;color:#D6D9EC}
+  a{color:var(--link);text-decoration:none;border-bottom:1px solid rgba(138,160,240,.35)}
+  a:hover{border-bottom-color:var(--link)}
+  a:focus-visible{outline:2px solid var(--link);outline-offset:3px;border-radius:3px}
+  footer{color:var(--muted);font-size:13px;margin-top:46px;
+    display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center}
+  footer .rule{flex-basis:100%;margin:0 0 14px}
+  body.lang-ja .en{display:none}
+  body.lang-en .ja{display:none}
+  .mark-enter{opacity:0;transform:translateY(4px);animation:rise .5s ease forwards}
+  @keyframes rise{to{opacity:1;transform:none}}
+  @media (prefers-reduced-motion:reduce){.mark-enter{animation:none;opacity:1;transform:none}}
+  @media (max-width:520px){h1{font-size:25px}.brand{font-size:20px}}
+</style>
+</head>
+<body class="lang-ja">
+<div class="wrap">
+
+  <header>
+    <svg class="mark mark-enter" viewBox="0 0 100 100" role="img" aria-label="GraphWeave">
+      <rect x="2" y="2" width="96" height="96" rx="23" fill="#1A1C38"/>
+      <g stroke-linecap="round" stroke-width="5" fill="none">
+        <line x1="50" y1="26" x2="26" y2="48" stroke="#3B4CC0"/>
+        <line x1="50" y1="26" x2="74" y2="48" stroke="#B40426"/>
+        <line x1="26" y1="48" x2="74" y2="48" stroke="#DDDDDD"/>
+        <line x1="26" y1="48" x2="38" y2="76" stroke="#9CA3D1"/>
+        <line x1="74" y1="48" x2="62" y2="76" stroke="#CD8694"/>
+        <line x1="38" y1="76" x2="62" y2="76" stroke="#B40426"/>
+      </g>
+      <g fill="#F4F6FF" stroke="#0E1022" stroke-width="2">
+        <circle cx="50" cy="26" r="8"/><circle cx="26" cy="48" r="8"/>
+        <circle cx="74" cy="48" r="8"/><circle cx="38" cy="76" r="8"/>
+        <circle cx="62" cy="76" r="8"/>
+      </g>
+    </svg>
+    <span class="brand">GraphWeave</span>
+    <div class="toggle" role="group" aria-label="Language">
+      <button id="btn-ja" aria-pressed="true" onclick="setLang('ja')">日本語</button>
+      <button id="btn-en" aria-pressed="false" onclick="setLang('en')">EN</button>
+    </div>
+  </header>
+
+  <div class="rule"></div>
+
+  <!-- ===== JA ===== -->
+  <div class="ja">
+    <p class="eyebrow">プライバシー</p>
+    <h1>プライバシーポリシー</h1>
+    <p class="lead">GraphWeave（以下「本アプリ」）は、利用者のプライバシーを尊重します。本アプリは、いかなる個人情報も収集・送信・共有しません。</p>
+
+    <div class="key"><b>結論:</b> 本アプリはデータを一切収集しません。作成したグラフは、利用者の端末内にのみ保存されます。</div>
+
+    <h2>収集する情報</h2>
+    <p>本アプリは、利用者に関するいかなる情報も収集しません。具体的には次のとおりです。</p>
+    <ul>
+      <li>本アプリはネットワーク通信を行いません。</li>
+      <li>解析ツール（アクセス解析等）を一切使用していません。</li>
+      <li>広告および広告関連のSDKを使用していません。</li>
+      <li>アカウント登録を必要とせず、利用者を識別する情報を取得しません。</li>
+    </ul>
+
+    <h2>利用者が作成したデータ</h2>
+    <p>利用者が作成したグラフ（ノード・リンク・名前）は、利用者の端末内にのみ保存されます。これらが外部のサーバーへ送信されることはありません。アプリの削除や、アプリ内での削除操作により、これらのデータは端末から取り除かれます。</p>
+
+    <h2>第三者への提供</h2>
+    <p>収集する情報がないため、第三者へ提供する情報もありません。</p>
+
+    <h2>お子様の利用</h2>
+    <p>本アプリはデータを収集しないため、年齢を問わず安心してご利用いただけます。</p>
+
+    <h2>本ポリシーの変更</h2>
+    <p>本ポリシーを変更する場合は、本ページを更新し、末尾の更新日を改めます。</p>
+
+    <h2>お問い合わせ</h2>
+    <!-- ↓↓↓ ここをご自身の連絡先メールに変更してください ↓↓↓ -->
+    <p>本ポリシーに関するお問い合わせ: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+  </div>
+
+  <!-- ===== EN ===== -->
+  <div class="en">
+    <p class="eyebrow">Privacy</p>
+    <h1>Privacy Policy</h1>
+    <p class="lead">GraphWeave ("the app") respects your privacy. The app does not collect, transmit, or share any personal information.</p>
+
+    <div class="key"><b>In short:</b> the app collects no data. Graphs you create are stored only on your device.</div>
+
+    <h2>Information we collect</h2>
+    <p>The app collects no information about you. Specifically:</p>
+    <ul>
+      <li>The app makes no network connections.</li>
+      <li>The app uses no analytics tools of any kind.</li>
+      <li>The app contains no advertising or advertising SDKs.</li>
+      <li>The app requires no account and gathers nothing that identifies you.</li>
+    </ul>
+
+    <h2>Data you create</h2>
+    <p>Graphs you create (nodes, links, and names) are stored only on your device. They are never sent to any external server. Deleting the app, or deleting a graph within the app, removes that data from your device.</p>
+
+    <h2>Sharing with third parties</h2>
+    <p>Because no information is collected, none is shared with anyone.</p>
+
+    <h2>Children</h2>
+    <p>Because the app collects no data, it is safe to use at any age.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If this policy changes, we will update this page and revise the date below.</p>
+
+    <h2>Contact</h2>
+    <!-- ↓↓↓ Replace with your own contact email ↓↓↓ -->
+    <p>Questions about this policy: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+  </div>
+
+  <footer>
+    <div class="rule"></div>
+    <span>© 2026 GraphWeave</span>
+    <span class="ja">最終更新: 2026年6月</span>
+    <span class="en">Last updated: June 2026</span>
+    <a href="support.html"><span class="ja">サポート</span><span class="en">Support</span></a>
+  </footer>
+
+</div>
+<script>
+  function setLang(l){
+    document.body.classList.toggle('lang-ja', l==='ja');
+    document.body.classList.toggle('lang-en', l==='en');
+    document.documentElement.lang = l;
+    document.getElementById('btn-ja').setAttribute('aria-pressed', l==='ja');
+    document.getElementById('btn-en').setAttribute('aria-pressed', l==='en');
+  }
+  if((navigator.language||'').toLowerCase().startsWith('en')) setLang('en');
+</script>
+</body>
+</html>
